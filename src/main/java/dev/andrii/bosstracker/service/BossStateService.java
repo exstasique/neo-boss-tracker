@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BossStateService {
 
-    private static final long SPAWN_TICK = TimeUnit.MINUTES.toMillis(15);
+    private static final long SPAWN_TICK = TimeUnit.SECONDS.toMillis(450);
 
     private final Map<BossChannel, BossState> states = new ConcurrentHashMap<>();
 

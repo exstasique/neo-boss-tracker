@@ -52,7 +52,7 @@ public class SpawnNotifier {
 
         statusMessage.getChannel()
             .sendMessage("""
-                @everyone 🌳 Возможен спавн **Императорского Древа** на %d канале!
+                🌳 Возможно появление **Императорского Древа** на %d канале!
                 """.formatted(channel.getNumber()))
             .queue(message ->
                 message.delete().queueAfter(3, TimeUnit.MINUTES));
